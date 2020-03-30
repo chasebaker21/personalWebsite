@@ -87,7 +87,7 @@ footer {
   border: 3px solid white;
 }
 #upvoice:hover {
-  background-image: url("assets/UpvoiceLogo ScreenShot.png");
+  background-image: url("/assets/UpvoiceLogo ScreenShot.png");
   background-position: center;
   background-size: cover;
 }
@@ -96,7 +96,7 @@ footer {
   border: 3px solid white;
 }
 #movieDatabase:hover {
-  background-image: url("assets/Urkernal Logo.png");
+  background-image: url("/assets/Urkernal Logo.png");
   background-position: center;
   background-size: cover;
 }
@@ -105,7 +105,7 @@ footer {
   color: white;
 }
 #triviaApp:hover {
-  background-image: url("assets/Trivia App.png");
+  background-image: url("/assets/Trivia App.png");
   background-position: center;
   background-size: cover;
 }
@@ -114,7 +114,7 @@ footer {
   color: white;
 }
 #budgetApp:hover {
-  background-image: url("assets/Budget App img2.png");
+  background-image: url("/assets/Budget App img2.png");
   background-position: center;
   background-size: cover;
 }
