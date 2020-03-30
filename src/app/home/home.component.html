@@ -1,0 +1,54 @@
+<body>
+  <!-- <header>
+    <button mat-button>Home</button>
+    <button mat-button>Work</button>
+    <button mat-button>Contact</button>
+  </header> -->
+  <main [ngClass]="{hoverUpvoice: hoverUpvoice, hoverMovie: hoverMovie, hoverTrivia: hoverTrivia, hoverBudget: hoverBudget}">
+    <mat-tab-group mat-align-tabs="center">
+      
+        <mat-tab label="Home">
+          <div class="myInfo">
+            <!-- <img src="assets/chase-baker.png" /> -->
+            <div class="tags">Design</div>
+            <div class="tags">Develop</div>
+            <div class="tags">Deploy</div>
+          </div>
+        </mat-tab>
+
+  
+
+
+      <mat-tab label="Work">
+        <div class="myProjects">
+          <div matRipple [matRippleColor]="color" id="upvoice" (mouseenter)="upvoiceHover()" (mouseleave)="upvoiceHover()"></div>
+          <div matRipple [matRippleColor]="color" id="movieDatabase" (mouseenter)="movieHover()" (mouseleave)="movieHover()"></div>
+          <div matRipple [matRippleColor]="color" id="triviaApp" (mouseenter)="triviaHover()" (mouseleave)="triviaHover()"></div>
+          <div matRipple [matRippleColor]="color" id="budgetApp" (mouseenter)="budgetHover()" (mouseleave)="budgetHover()"></div>
+        </div>
+    
+      </mat-tab>
+    </mat-tab-group>
+
+  </main>
+
+  <!-- <main>
+    <div class="myInfo">
+      <img src="assets/chase-baker.png" />
+      <h3>
+        I'm Chase Baker a developer that loves what I do.
+      </h3>
+      <p>Take a look at some of my work!</p>
+    </div>
+    <div class="myProjects">
+      <div matRipple [matRippleColor]="color" id="upvoice"></div>
+      <div matRipple [matRippleColor]="color" id="movieDatabase"></div>
+      <div matRipple [matRippleColor]="color" id="triviaApp"></div>
+      <div matRipple [matRippleColor]="color" id="budgetApp"></div>
+    </div>
+  </main> -->
+  <footer>
+    <button mat-button>LinkedIn</button>
+    <button mat-button>GitHub</button>
+  </footer>
+</body>

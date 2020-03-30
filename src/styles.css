@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 95vh;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: black;
+}
+.mat-tab-label {
+  background-color: rgb(62, 65, 71);
+  height: 100%;
+  width: 100%;
+  color: white;
+  z-index: 2;
+}
+
+.mat-tab-body-wrapper {
+  height: 100%;
+}
+.mat-tab-body.mat-tab-body-active {
+  height: 800px;
+}
+

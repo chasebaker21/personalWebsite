@@ -1,0 +1,120 @@
+button {
+  color: white;
+}
+
+ /* sets the background color when each project is hovered */
+.hoverUpvoice {
+    background: blue;
+    transition: background-color 1s linear;
+}
+.hoverMovie {
+    background: red;
+    transition: background-color 1s linear;
+}
+.hoverTrivia {
+    background: darkblue;
+    transition: background-color 1s linear;
+}
+.hoverBudget {
+    background: green;
+    transition: background-color 1s linear;
+}
+/* header {
+    background-color: rgb(62,65,71);
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+} */
+
+main {
+  height: 100%;
+  width: 100%;
+}
+.myInfo {
+    height: 750px;
+    justify-content: space-around;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tags {
+    border: 3px solid white;
+    padding: 22px;
+    font-size: 3rem;
+    width: 165px;
+    text-align: center;
+    color: white;
+}
+p {
+  text-align: center;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(37,39,43);
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 2;
+}
+
+.myProjects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 200vh;
+  width: 100%;
+}
+.myProjects div {
+  margin: 5px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 270px;
+}
+
+#upvoice {
+  color: white;
+  border: 3px solid white;
+}
+#upvoice:hover {
+  background-image: url("/assets/UpvoiceLogo ScreenShot.png");
+  background-position: center;
+  background-size: cover;
+}
+#movieDatabase {
+  color: white;
+  border: 3px solid white;
+}
+#movieDatabase:hover {
+  background-image: url("/assets/Urkernal Logo.png");
+  background-position: center;
+  background-size: cover;
+}
+#triviaApp {
+  border: 3px solid white;
+  color: white;
+}
+#triviaApp:hover {
+  background-image: url("/assets/Trivia App.png");
+  background-position: center;
+  background-size: cover;
+}
+#budgetApp {
+  border: 3px solid white;
+  color: white;
+}
+#budgetApp:hover {
+  background-image: url("/assets/Budget App img2.png");
+  background-position: center;
+  background-size: cover;
+}
