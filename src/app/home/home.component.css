@@ -26,7 +26,7 @@ header {
     justify-content: space-around;
 }
 .myInfo {
-    height: 1300px;
+    height: 2175px;
     justify-content: space-around;
     text-align: center;
     display: flex;
@@ -77,6 +77,7 @@ footer {
   align-items: center;
   width: 80%;
   height: 270px;
+  text-decoration: none;
 }
 .projectInfo h1 {
   border: 3px solid white;
@@ -87,16 +88,12 @@ footer {
 #upvoice {
   color: white;
   border: 3px solid white;
-  background-image: url("/assets/UpvoiceScreenShot.png");
-  background-position: center;
-  background-size: cover;
-
 }
-/* #upvoice:hover {
+#upvoice:hover {
   background-image: url("/assets/UpvoiceLogo ScreenShot.png");
   background-position: center;
   background-size: cover;
-} */
+}
 #movieDatabase {
   color: white;
   border: 3px solid white;
@@ -132,4 +129,28 @@ footer {
   align-items: center;
   width: 80%;
   height: 275px;
-  color: white;}
+  color: white;
+}
+.mySkills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.fa-2x {
+  font-size: 4rem;
+  margin: 5px;
+  flex-basis: 46%;
+  width: 96px;
+}
+
+ /* adds animation to each project title movie them above project image */
+.moveTitle {
+  position: relative;
+  animation-name: title;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes title{
+  from {top: 0;}
+  to {top: -160px;}
+}

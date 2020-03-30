@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, Input } from '@angular/core';
 
 @Component({
   selector: 'home',
@@ -7,11 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  color: string;
   hoverUpvoice: boolean = false;
   hoverMovie: boolean = false;
   hoverTrivia: boolean = false;
   hoverBudget: boolean = false;
+  clickUpvoice: boolean = false;
+  clickMovie: boolean = false;
+  clickTrivia: boolean = false;
+  clickBudget: boolean = false;
 
   constructor() { }
 
@@ -30,5 +33,17 @@ export class HomeComponent implements OnInit {
   }
   budgetHover() {
     this.hoverBudget = !this.hoverBudget;
+  }
+
+  moveUp() {
+    if(this.hoverUpvoice){
+    this.clickUpvoice = true;
+    } else if (this.hoverMovie) {
+      this.clickMovie = true;
+    } else if (this.hoverTrivia) {
+      this.clickTrivia = true;
+    } else if(this.hoverBudget) {
+      this.clickBudget = true;
+    }
   }
 }

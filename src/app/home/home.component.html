@@ -17,79 +17,100 @@
         <img src="assets/chase-baker.png" />
         <p>Hi I’m Chase, a web developer from Grand Rapids Michigan.</p>
       </div>
+      <div>
+        <h1 data-aos="fade-down" data-aos-duration="2000">My Skills so far,</h1>
+        <section
+          class="mySkills"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <div>
+            <i class="fab fa-js-square fa-2x"></i>
+            <p>JavaScript</p>
+          </div>
+          <div>
+            <i class="fab fa-html5 fa-2x"></i>
+            <p>HTML</p>
+          </div>
+          <div>
+            <i class="fab fa-css3-alt fa-2x"></i>
+            <p>CSS</p>
+          </div>
+          <div>
+            <i class="fab fa-angular fa-2x"></i>
+            <p>Angular</p>
+          </div>
+          <div>
+            <i class="fab fa-node fa-2x"></i>
+            <p>Node.js</p>
+          </div>
+          <div>
+            <i class="fab fa-git fa-2x"></i>
+            <p>Git</p>
+          </div>
+          <div>
+            <i class="fab fa-github-square fa-2x"></i>
+            <p>GitHub</p>
+          </div>
+        </section>
+      </div>
       <div data-aos="fade-right" data-aos-duration="2000">
         <p>Please take a look at some of my work.</p>
       </div>
-      <section>
-        My Skills so far,
-        <i class="fab fa-js-square"></i>
-        <i class="fab fa-html5"></i>
-        <i class="fab fa-html5"></i>
-        <i class="fab fa-angular"></i>
-        <i class="fab fa-node"></i>
-        <i class="fab fa-git"></i>
-        <i class="fab fa-github-square"></i>
-      </section>
     </div>
 
     <div class="myProjects">
       <div class="projectInfo">
-        <h1>UPVOICE</h1>        
         <a
-        matTooltip="UPVOICE is an application built for my city to help connect the
+          matTooltip="UPVOICE is an application built for my city to help connect the
         citizen to the city. UPGR allows a citizen to view, vote, and comment
         on upcoming city projects."
           data-aos="fade-down"
           data-aos-duration="1800"
-          matRipple
-          [matRippleColor]="color"
           id="upvoice"
           (mouseenter)="upvoiceHover()"
           (mouseleave)="upvoiceHover()"
-          href="https://chasebaker21.github.io/final_project/"
-          target="_blank"
         >
+        <h1 (click)="moveUp()" [ngClass]="{moveTitle: clickUpvoice}">UPVOICE</h1>
+        </a>
+      </div>
+      <div class="projectInfo">
+        <a
+          data-aos="fade-right"
+          data-aos-duration="1800"
+          id="movieDatabase"
+          (mouseenter)="movieHover()"
+          (mouseleave)="movieHover()"
+        >
+        <h1 (click)="moveUp()" [ngClass]="{moveTitle: clickMovie}">Urkernal</h1>
+
       </a>
       </div>
+
       <div class="projectInfo">
-        <h1>Urkernal</h1>
         <a
-        data-aos="fade-right"
-        data-aos-duration="1800"
-        matRipple
-        [matRippleColor]="color"
-        id="movieDatabase"
-        (mouseenter)="movieHover()"
-        (mouseleave)="movieHover()"
-      ></a>
+          data-aos="fade-up"
+          data-aos-duration="1800"
+          id="triviaApp"
+          (mouseenter)="triviaHover()"
+          (mouseleave)="triviaHover()"
+        >
+        <h1 (click)="moveUp()" [ngClass]="{moveTitle: clickTrivia}">Trivia App</h1>
+
+      </a>
       </div>
 
       <div class="projectInfo">
-        <h1>Trivia App</h1>
         <a
-        data-aos="fade-up"
-        data-aos-duration="1800"
-        matRipple
-        [matRippleColor]="color"
-        id="triviaApp"
-        (mouseenter)="triviaHover()"
-        (mouseleave)="triviaHover()"
-      ></a>
+          data-aos="fade-down"
+          data-aos-duration="1800"
+          id="budgetApp"
+          (mouseenter)="budgetHover()"
+          (mouseleave)="budgetHover()"
+        >
+        <h1 (click)="moveUp()" [ngClass]="{moveTitle: clickBudget}">Budget App</h1>
+      </a>
       </div>
-
-      <div class="projectInfo">
-        <h1>Budget App</h1>
-        <a
-        data-aos="fade-down"
-        data-aos-duration="1800"
-        matRipple
-        [matRippleColor]="color"
-        id="budgetApp"
-        (mouseenter)="budgetHover()"
-        (mouseleave)="budgetHover()"
-      ></a>
-      </div>
-
     </div>
   </main>
   <footer>
