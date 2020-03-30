@@ -19,24 +19,21 @@ button {
     background: green;
     transition: background-color 1s linear;
 }
-/* header {
+header {
     background-color: rgb(62,65,71);
     height: 50px;
     display: flex;
     justify-content: space-around;
-} */
-
-main {
-  height: 100%;
-  width: 100%;
 }
 .myInfo {
-    height: 750px;
+    height: 1300px;
     justify-content: space-around;
-    margin: 25px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
+    margin-bottom: 300px;
 }
 .tags {
     border: 3px solid white;
@@ -48,11 +45,12 @@ main {
 }
 p {
   text-align: center;
+  font-size: 1.1rem;
+  padding: 10px;
 }
 
 img {
-  height: 150px;
-  width: 150px;
+  height: 250px;
 }
 
 footer {
@@ -69,28 +67,36 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 200vh;
+  height: 475vh;
   width: 100%;
 }
-.myProjects div {
+.myProjects a {
   margin: 5px;
-  margin-top: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 80%;
   height: 270px;
+}
+.projectInfo h1 {
+  border: 3px solid white;
+  padding: 5px;
+  font-size: 2rem;
 }
 
 #upvoice {
   color: white;
   border: 3px solid white;
+  background-image: url("/assets/UpvoiceScreenShot.png");
+  background-position: center;
+  background-size: cover;
+
 }
-#upvoice:hover {
+/* #upvoice:hover {
   background-image: url("/assets/UpvoiceLogo ScreenShot.png");
   background-position: center;
   background-size: cover;
-}
+} */
 #movieDatabase {
   color: white;
   border: 3px solid white;
@@ -118,3 +124,12 @@ footer {
   background-position: center;
   background-size: cover;
 }
+
+.projectInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 275px;
+  color: white;}

@@ -1,52 +1,97 @@
 <body>
-  <!-- <header>
+  <header>
     <button mat-button>Home</button>
     <button mat-button>Work</button>
     <button mat-button>Contact</button>
-  </header> -->
-  <main [ngClass]="{hoverUpvoice: hoverUpvoice, hoverMovie: hoverMovie, hoverTrivia: hoverTrivia, hoverBudget: hoverBudget}">
-    <mat-tab-group mat-align-tabs="center">
-      
-        <mat-tab label="Home">
-          <div class="myInfo">
-            <!-- <img src="assets/chase-baker.png" /> -->
-            <div class="tags">Design</div>
-            <div class="tags">Develop</div>
-            <div class="tags">Deploy</div>
-          </div>
-        </mat-tab>
-
-  
-
-
-      <mat-tab label="Work">
-        <div class="myProjects">
-          <div matRipple [matRippleColor]="color" id="upvoice" (mouseenter)="upvoiceHover()" (mouseleave)="upvoiceHover()"></div>
-          <div matRipple [matRippleColor]="color" id="movieDatabase" (mouseenter)="movieHover()" (mouseleave)="movieHover()"></div>
-          <div matRipple [matRippleColor]="color" id="triviaApp" (mouseenter)="triviaHover()" (mouseleave)="triviaHover()"></div>
-          <div matRipple [matRippleColor]="color" id="budgetApp" (mouseenter)="budgetHover()" (mouseleave)="budgetHover()"></div>
-        </div>
-    
-      </mat-tab>
-    </mat-tab-group>
-
-  </main>
-
-  <!-- <main>
+  </header>
+  <main
+    [ngClass]="{
+      hoverUpvoice: hoverUpvoice,
+      hoverMovie: hoverMovie,
+      hoverTrivia: hoverTrivia,
+      hoverBudget: hoverBudget
+    }"
+  >
     <div class="myInfo">
-      <img src="assets/chase-baker.png" />
-      <h3>
-        I'm Chase Baker a developer that loves what I do.
-      </h3>
-      <p>Take a look at some of my work!</p>
+      <div data-aos="fade-down" data-aos-duration="2000">
+        <img src="assets/chase-baker.png" />
+        <p>Hi I’m Chase, a web developer from Grand Rapids Michigan.</p>
+      </div>
+      <div data-aos="fade-right" data-aos-duration="2000">
+        <p>Please take a look at some of my work.</p>
+      </div>
+      <section>
+        My Skills so far,
+        <i class="fab fa-js-square"></i>
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-angular"></i>
+        <i class="fab fa-node"></i>
+        <i class="fab fa-git"></i>
+        <i class="fab fa-github-square"></i>
+      </section>
     </div>
+
     <div class="myProjects">
-      <div matRipple [matRippleColor]="color" id="upvoice"></div>
-      <div matRipple [matRippleColor]="color" id="movieDatabase"></div>
-      <div matRipple [matRippleColor]="color" id="triviaApp"></div>
-      <div matRipple [matRippleColor]="color" id="budgetApp"></div>
+      <div class="projectInfo">
+        <h1>UPVOICE</h1>        
+        <a
+        matTooltip="UPVOICE is an application built for my city to help connect the
+        citizen to the city. UPGR allows a citizen to view, vote, and comment
+        on upcoming city projects."
+          data-aos="fade-down"
+          data-aos-duration="1800"
+          matRipple
+          [matRippleColor]="color"
+          id="upvoice"
+          (mouseenter)="upvoiceHover()"
+          (mouseleave)="upvoiceHover()"
+          href="https://chasebaker21.github.io/final_project/"
+          target="_blank"
+        >
+      </a>
+      </div>
+      <div class="projectInfo">
+        <h1>Urkernal</h1>
+        <a
+        data-aos="fade-right"
+        data-aos-duration="1800"
+        matRipple
+        [matRippleColor]="color"
+        id="movieDatabase"
+        (mouseenter)="movieHover()"
+        (mouseleave)="movieHover()"
+      ></a>
+      </div>
+
+      <div class="projectInfo">
+        <h1>Trivia App</h1>
+        <a
+        data-aos="fade-up"
+        data-aos-duration="1800"
+        matRipple
+        [matRippleColor]="color"
+        id="triviaApp"
+        (mouseenter)="triviaHover()"
+        (mouseleave)="triviaHover()"
+      ></a>
+      </div>
+
+      <div class="projectInfo">
+        <h1>Budget App</h1>
+        <a
+        data-aos="fade-down"
+        data-aos-duration="1800"
+        matRipple
+        [matRippleColor]="color"
+        id="budgetApp"
+        (mouseenter)="budgetHover()"
+        (mouseleave)="budgetHover()"
+      ></a>
+      </div>
+
     </div>
-  </main> -->
+  </main>
   <footer>
     <button mat-button>LinkedIn</button>
     <button mat-button>GitHub</button>
