@@ -1,11 +1,11 @@
-button {
+a {
   color: white;
 }
 
  /* sets the background color when each project is hovered */
 .hoverUpvoice {
-    background: blue;
-    transition: background-color 1s linear;
+  background: #1179cc;
+  transition: background-color 1s linear;
 }
 .hoverMovie {
     background: red;
@@ -24,6 +24,7 @@ header {
     height: 50px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .myInfo {
     height: 2175px;
@@ -54,14 +55,14 @@ img {
 }
 
 footer {
-  position: fixed;
-  width: 100%;
-  background-color: rgb(37,39,43);
+  position: absolute;
+  background-color: rgb(62,65,71);
   height: 50px;
   display: flex;
   justify-content: space-evenly;
-  z-index: 2;
-}
+  align-items: center;
+  z-index: 3;
+  width: 100%;}
 
 .myProjects {
   display: flex;
@@ -87,39 +88,55 @@ footer {
 
 #upvoice {
   color: white;
-  border: 3px solid white;
 }
 #upvoice:hover {
-  background-image: url("/assets/UpvoiceLogo ScreenShot.png");
+  background-image: url("/assets/UpvoiceScreenShot.png");
   background-position: center;
   background-size: cover;
+  animation-name: fadein;
+  animation-duration: 4s;
+  border: 3px solid black;
+  border-radius: 5px;
 }
 #movieDatabase {
   color: white;
-  border: 3px solid white;
 }
 #movieDatabase:hover {
-  background-image: url("/assets/Urkernal Logo.png");
+  background-image: url("/assets/MovieDatabase.png");
   background-position: center;
   background-size: cover;
+  animation-name: fadein;
+  animation-duration: 4s;
+  border: 3px solid black;
+  border-radius: 5px;
+
+
 }
 #triviaApp {
-  border: 3px solid white;
   color: white;
 }
 #triviaApp:hover {
   background-image: url("/assets/Trivia App.png");
   background-position: center;
   background-size: cover;
+  animation-name: fadein;
+  animation-duration: 4s;
+  border: 3px solid black;
+  border-radius: 5px;
+
 }
 #budgetApp {
-  border: 3px solid white;
   color: white;
 }
 #budgetApp:hover {
   background-image: url("/assets/Budget App img2.png");
   background-position: center;
   background-size: cover;
+  animation-name: fadein;
+  animation-duration: 4s;
+  border: 3px solid black;
+  border-radius: 5px;
+
 }
 
 .projectInfo {
@@ -143,14 +160,38 @@ footer {
   width: 96px;
 }
 
- /* adds animation to each project title movie them above project image */
 .moveTitle {
   position: relative;
   animation-name: title;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
+ /* adds animation to each project title movie them above project image */
 @keyframes title{
   from {top: 0;}
   to {top: -160px;}
 }
+ /* adds fade in effect to background images of each project when clicked */
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .bioInfo {
+    position: relative;
+    left: -24%;
+    top: 22px;
+  }
+  .myInfo {
+    height: 100%;
+  }
+  
+  .skillsInfo {
+    position: relative;
+    top: 265px;
+    margin-bottom: 340px;  
+  }
+}
+

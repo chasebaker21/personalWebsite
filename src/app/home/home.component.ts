@@ -35,6 +35,7 @@ export class HomeComponent implements OnInit {
     this.hoverBudget = !this.hoverBudget;
   }
 
+  // activates the ngclass title animation for whichever project title is selected
   moveUp() {
     if(this.hoverUpvoice){
     this.clickUpvoice = true;

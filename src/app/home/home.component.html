@@ -1,8 +1,8 @@
 <body>
   <header>
-    <button mat-button>Home</button>
-    <button mat-button>Work</button>
-    <button mat-button>Contact</button>
+    <a mat-button>Home</a>
+    <a mat-button>Work</a>
+    <a mat-button>Contact</a>
   </header>
   <main
     [ngClass]="{
@@ -13,11 +13,11 @@
     }"
   >
     <div class="myInfo">
-      <div data-aos="fade-down" data-aos-duration="2000">
+      <div data-aos="fade-down" data-aos-duration="2000" class="bioInfo">
         <img src="assets/chase-baker.png" />
         <p>Hi I’m Chase, a web developer from Grand Rapids Michigan.</p>
       </div>
-      <div>
+      <div class="skillsInfo">
         <h1 data-aos="fade-down" data-aos-duration="2000">My Skills so far,</h1>
         <section
           class="mySkills"
@@ -65,10 +65,10 @@
           matTooltip="UPVOICE is an application built for my city to help connect the
         citizen to the city. UPGR allows a citizen to view, vote, and comment
         on upcoming city projects."
-          data-aos="fade-down"
-          data-aos-duration="1800"
+        data-aos="fade-down"
+        data-aos-duration="1800"        
           id="upvoice"
-          (mouseenter)="upvoiceHover()"
+          (mouseenter)="upvoiceHover(); moveUp()"
           (mouseleave)="upvoiceHover()"
         >
         <h1 (click)="moveUp()" [ngClass]="{moveTitle: clickUpvoice}">UPVOICE</h1>
@@ -76,11 +76,10 @@
       </div>
       <div class="projectInfo">
         <a
-          data-aos="fade-right"
-          data-aos-duration="1800"
+        data-aos="fade-right"
+        data-aos-duration="1800"
           id="movieDatabase"
-          (mouseenter)="movieHover()"
-          (mouseleave)="movieHover()"
+          (mouseenter)="movieHover(); moveUp()"
         >
         <h1 (click)="moveUp()" [ngClass]="{moveTitle: clickMovie}">Urkernal</h1>
 
@@ -89,10 +88,10 @@
 
       <div class="projectInfo">
         <a
-          data-aos="fade-up"
-          data-aos-duration="1800"
+        data-aos="fade-up"
+        data-aos-duration="1800"
           id="triviaApp"
-          (mouseenter)="triviaHover()"
+          (mouseenter)="triviaHover(); moveUp()"
           (mouseleave)="triviaHover()"
         >
         <h1 (click)="moveUp()" [ngClass]="{moveTitle: clickTrivia}">Trivia App</h1>
@@ -102,10 +101,10 @@
 
       <div class="projectInfo">
         <a
-          data-aos="fade-down"
-          data-aos-duration="1800"
+        data-aos="fade-down"
+        data-aos-duration="1800"
           id="budgetApp"
-          (mouseenter)="budgetHover()"
+          (mouseenter)="budgetHover(); moveUp()"
           (mouseleave)="budgetHover()"
         >
         <h1 (click)="moveUp()" [ngClass]="{moveTitle: clickBudget}">Budget App</h1>
@@ -114,7 +113,7 @@
     </div>
   </main>
   <footer>
-    <button mat-button>LinkedIn</button>
-    <button mat-button>GitHub</button>
+    <a href='https://www.linkedin.com/in/chase-baker-b55631180/' target="_blank" mat-button>LinkedIn</a>
+    <a href="https://github.com/chasebaker21" target="_blank" mat-button>GitHub</a>
   </footer>
 </body>
