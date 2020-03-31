@@ -80,6 +80,7 @@
         data-aos-duration="1800"
           id="movieDatabase"
           (mouseenter)="movieHover(); moveUp()"
+          (mouseleave)="movieHover()"
         >
         <h1 (click)="moveUp()" [ngClass]="{moveTitle: clickMovie}">Urkernal</h1>
 
