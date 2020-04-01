@@ -15,10 +15,10 @@
     <div class="myInfo">
       <div data-aos="fade-down" data-aos-duration="2000" class="bioInfo">
         <img src="assets/chase-baker.png" />
-        <p>Hi I’m Chase, a web developer from Grand Rapids Michigan.</p>
+        <p class="textStyle">Hi I’m Chase, a web developer from Grand Rapids Michigan.</p>
       </div>
       <div class="skillsInfo">
-        <h1 data-aos="fade-down" data-aos-duration="2000">My Skills so far,</h1>
+        <h1 data-aos="fade-down" data-aos-duration="2000" class="textStyle">My Skills so far,</h1>
         <section
           class="mySkills"
           data-aos="fade-right"
@@ -26,36 +26,40 @@
         >
           <div>
             <i class="fab fa-js-square fa-2x"></i>
-            <p>JavaScript</p>
+            <p class="textStyle">JavaScript</p>
           </div>
           <div>
             <i class="fab fa-html5 fa-2x"></i>
-            <p>HTML</p>
+            <p class="textStyle">HTML</p>
           </div>
           <div>
             <i class="fab fa-css3-alt fa-2x"></i>
-            <p>CSS</p>
+            <p class="textStyle">CSS</p>
           </div>
           <div>
             <i class="fab fa-angular fa-2x"></i>
-            <p>Angular</p>
+            <p class="textStyle">Angular</p>
           </div>
           <div>
             <i class="fab fa-node fa-2x"></i>
-            <p>Node.js</p>
+            <p class="textStyle">Node.js</p>
           </div>
           <div>
             <i class="fab fa-git fa-2x"></i>
-            <p>Git</p>
+            <p class="textStyle">Git</p>
           </div>
           <div>
             <i class="fab fa-github-square fa-2x"></i>
-            <p>GitHub</p>
+            <p class="textStyle">GitHub</p>
           </div>
         </section>
       </div>
       <div data-aos="fade-right" data-aos-duration="2000">
-        <p>Please take a look at some of my work.</p>
+        <p class="textStyle">
+          I started in web development in my early to mid twenties. I love
+          solving problems and creating dynamic websites and applications.
+          Please take a look at a few of my projects.
+        </p>
       </div>
     </div>
 
@@ -65,56 +69,73 @@
           matTooltip="UPVOICE is an application built for my city to help connect the
         citizen to the city. UPGR allows a citizen to view, vote, and comment
         on upcoming city projects."
-        data-aos="fade-down"
-        data-aos-duration="1800"        
+          data-aos="fade-right"
+          data-aos-duration="1800"
           id="upvoice"
           (mouseenter)="upvoiceHover(); moveUp()"
-          (mouseleave)="upvoiceHover()"
+          (mouseleave)="upvoiceHover(); moveDown()"
         >
-        <h1 (click)="moveUp()" [ngClass]="{moveTitle: clickUpvoice}">UPVOICE</h1>
+          <h1 (click)="moveUp()" [ngClass]="{ moveTitle: clickUpvoice }" class="textStyle">
+            UPVOICE
+          </h1>
         </a>
       </div>
       <div class="projectInfo">
         <a
-        data-aos="fade-right"
-        data-aos-duration="1800"
+          data-aos="fade-right"
+          data-aos-duration="1800"
           id="movieDatabase"
           (mouseenter)="movieHover(); moveUp()"
           (mouseleave)="movieHover()"
         >
-        <h1 (click)="moveUp()" [ngClass]="{moveTitle: clickMovie}">Urkernal</h1>
-
-      </a>
+          <h1
+            (click)="moveUp()"
+            [ngClass]="{ moveTitle: clickMovie, moveTitleBack: !clickMovie }"
+            class="textStyle"
+          >
+            Urkernal
+          </h1>
+        </a>
       </div>
 
       <div class="projectInfo">
         <a
-        data-aos="fade-up"
-        data-aos-duration="1800"
+          data-aos="fade-right"
+          data-aos-duration="1800"
           id="triviaApp"
           (mouseenter)="triviaHover(); moveUp()"
           (mouseleave)="triviaHover()"
         >
-        <h1 (click)="moveUp()" [ngClass]="{moveTitle: clickTrivia}">Trivia App</h1>
-
-      </a>
+          <h1 (click)="moveUp()" [ngClass]="{ moveTitle: clickTrivia }" class="textStyle">
+            Trivia App
+          </h1>
+        </a>
       </div>
 
       <div class="projectInfo">
         <a
-        data-aos="fade-down"
-        data-aos-duration="1800"
+          data-aos="fade-right"
+          data-aos-duration="1800"
           id="budgetApp"
           (mouseenter)="budgetHover(); moveUp()"
           (mouseleave)="budgetHover()"
         >
-        <h1 (click)="moveUp()" [ngClass]="{moveTitle: clickBudget}">Budget App</h1>
-      </a>
+          <h1 (click)="moveUp()" [ngClass]="{ moveTitle: clickBudget }" class="textStyle">
+            Budget App
+          </h1>
+        </a>
       </div>
     </div>
   </main>
   <footer>
-    <a href='https://www.linkedin.com/in/chase-baker-b55631180/' target="_blank" mat-button>LinkedIn</a>
-    <a href="https://github.com/chasebaker21" target="_blank" mat-button>GitHub</a>
+    <a
+      href="https://www.linkedin.com/in/chase-baker-b55631180/"
+      target="_blank"
+      mat-button
+      >LinkedIn</a
+    >
+    <a href="https://github.com/chasebaker21" target="_blank" mat-button
+      >GitHub</a
+    >
   </footer>
 </body>

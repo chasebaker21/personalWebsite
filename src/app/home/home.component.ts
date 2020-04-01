@@ -47,4 +47,16 @@ export class HomeComponent implements OnInit {
       this.clickBudget = true;
     }
   }
+
+  moveDown() {
+    if(this.hoverUpvoice){
+      this.clickUpvoice = false;
+      } else if (this.hoverMovie) {
+        this.clickMovie = false;
+      } else if (this.hoverTrivia) {
+        this.clickTrivia = false;
+      } else if(this.hoverBudget) {
+        this.clickBudget = false;
+      }  
+  }
 }
