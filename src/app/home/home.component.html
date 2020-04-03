@@ -15,7 +15,9 @@
     <div class="myInfo">
       <div data-aos="fade-down" data-aos-duration="2000" class="bioInfo">
         <img src="assets/chase-baker.png" />
-        <p class="textStyle">Hi I’m Chase, a web developer from Grand Rapids Michigan.</p>
+        <p class="textStyle">
+          Hi I’m Chase, a web developer from Grand Rapids Michigan.
+        </p>
       </div>
       <div class="skillsInfo">
         <h1 class="textStyle">My Skills so far,</h1>
@@ -72,14 +74,21 @@
           (mouseenter)="upvoiceHover(); moveUp()"
           (mouseleave)="upvoiceHover(); moveDown()"
         >
-        <h1 (click)="moveUp()" [ngClass]="{ moveTitle: clickUpvoice }" class="textStyle">
-          UPVOICE
-        </h1>
+          <h1
+            (click)="moveUp()"
+            [ngClass]="{ moveTitle: clickUpvoice }"
+            class="textStyle"
+          >
+            UPVOICE
+          </h1>
         </a>
 
-        <mat-card-content class="textStyle">UPVOICE is an application built for my city to help connect the
+        <mat-card-content class="textStyle"
+          >UPVOICE is an application built for my city to help connect the
           citizen to the city. UPGR allows a citizen to view, vote, and comment
-          on upcoming city projects.</mat-card-content>
+          on upcoming city projects.(click the image to view the live
+          demo!)</mat-card-content
+        >
       </div>
       <div class="projectInfo">
         <a
@@ -97,6 +106,11 @@
             Urkernal
           </h1>
         </a>
+        <mat-card-content class="textStyle"
+          >Urkernal is a movie database! Useful for viewing upcoming movies
+          and/or any movie past or present. All movies were pulled from an movie
+          API.(click the image to view the live demo!)</mat-card-content
+        >
       </div>
 
       <div class="projectInfo">
@@ -107,10 +121,18 @@
           (mouseenter)="triviaHover(); moveUp()"
           (mouseleave)="triviaHover()"
         >
-          <h1 (click)="moveUp()" [ngClass]="{ moveTitle: clickTrivia }" class="textStyle">
+          <h1
+            (click)="moveUp()"
+            [ngClass]="{ moveTitle: clickTrivia }"
+            class="textStyle"
+          >
             Trivia App
           </h1>
         </a>
+        <mat-card-content class="textStyle"
+          >Simple Trivia App that allows user to select category and
+          difficulty.(click the image to view the live demo!)</mat-card-content
+        >
       </div>
 
       <div class="projectInfo">
@@ -121,10 +143,19 @@
           (mouseenter)="budgetHover(); moveUp()"
           (mouseleave)="budgetHover()"
         >
-          <h1 (click)="moveUp()" [ngClass]="{ moveTitle: clickBudget }" class="textStyle">
+          <h1
+            (click)="moveUp()"
+            [ngClass]="{ moveTitle: clickBudget }"
+            class="textStyle"
+          >
             Budget App
           </h1>
         </a>
+        <mat-card-content class="textStyle"
+          >One of my first group projects! The budget app will help a user build
+          a simple budget.(click the image to view the live
+          demo!)</mat-card-content
+        >
       </div>
     </div>
   </main>
