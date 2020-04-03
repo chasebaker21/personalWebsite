@@ -18,7 +18,7 @@
         <p class="textStyle">Hi I’m Chase, a web developer from Grand Rapids Michigan.</p>
       </div>
       <div class="skillsInfo">
-        <h1 data-aos="fade-down" data-aos-duration="2000" class="textStyle">My Skills so far,</h1>
+        <h1 class="textStyle">My Skills so far,</h1>
         <section
           class="mySkills"
           data-aos="fade-right"
@@ -66,19 +66,20 @@
     <div class="myProjects">
       <div class="projectInfo">
         <a
-          matTooltip="UPVOICE is an application built for my city to help connect the
-        citizen to the city. UPGR allows a citizen to view, vote, and comment
-        on upcoming city projects."
           data-aos="fade-right"
           data-aos-duration="1800"
           id="upvoice"
           (mouseenter)="upvoiceHover(); moveUp()"
           (mouseleave)="upvoiceHover(); moveDown()"
         >
-          <h1 (click)="moveUp()" [ngClass]="{ moveTitle: clickUpvoice }" class="textStyle">
-            UPVOICE
-          </h1>
+        <h1 (click)="moveUp()" [ngClass]="{ moveTitle: clickUpvoice }" class="textStyle">
+          UPVOICE
+        </h1>
         </a>
+
+        <mat-card-content class="textStyle">UPVOICE is an application built for my city to help connect the
+          citizen to the city. UPGR allows a citizen to view, vote, and comment
+          on upcoming city projects.</mat-card-content>
       </div>
       <div class="projectInfo">
         <a

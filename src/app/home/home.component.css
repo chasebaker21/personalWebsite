@@ -80,6 +80,8 @@ footer a {
 }
 #upvoice {
   color: white;
+  border: 2px solid white;
+
 }
 #upvoice:hover {
   background-image: url("/assets/upvoiceImage.png");
@@ -92,6 +94,8 @@ footer a {
 }
 #movieDatabase {
   color: white;
+  border: 2px solid white;
+
 }
 #movieDatabase:hover {
   background-image: url("/assets/MovieDatabase.png");
@@ -104,6 +108,8 @@ footer a {
 }
 #triviaApp {
   color: white;
+  border: 2px solid white;
+
 }
 #triviaApp:hover {
   background-image: url("/assets/Trivia App.png");
@@ -116,13 +122,15 @@ footer a {
 }
 #budgetApp {
   color: white;
+  border: 2px solid white;
+
 }
 #budgetApp:hover {
   background-image: url("/assets/budgetApp.png");
   background-position: center;
   background-size: cover;
   animation-name: fadein;
-  animation-duration: 4s;
+  animation-duration: 4s;  
   border: 3px solid black;
   border-radius: 5px;
 }
@@ -219,7 +227,7 @@ img {
 
   .skillsInfo {
     position: relative;
-    top: 265px;
+    top: 230px;
     margin-bottom: 340px;
   }
   #upvoice {
@@ -232,10 +240,10 @@ img {
     height: 515px;
   }
 
-  #trivaApp {
-    width: 765px;
-    height: 600px;  
-  }
+  #triviaApp {
+    height: 610px;
+    width: 805px;
+    }
 
   #budgetApp {
     width: 950px;
