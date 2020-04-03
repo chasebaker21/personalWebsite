@@ -85,7 +85,7 @@ footer a {
 
 }
 #upvoice:hover {
-  background-image: url("/Users/chasebaker/Documents/Projects/portfolio/website/src/assets/upvoiceImage.png");
+  background-image: url("/assets/upvoiceImage.png");
   background-position: center;
   background-size: cover;
   animation-name: fadein;
@@ -99,7 +99,7 @@ footer a {
 
 }
 #movieDatabase:hover {
-  background-image: url("/assets/MovieDatabase.png");
+  background-image: url("https://github.com/chasebaker21/personalWebsite/blob/master/src/assets/MovieDatabase.png");
   background-position: center;
   background-size: cover;
   animation-name: fadein;
