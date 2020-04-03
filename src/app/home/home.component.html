@@ -1,15 +1,23 @@
 <body>
-  <header>
-    <a mat-button>Home</a>
-    <a mat-button [matMenuTriggerFor]="work">Work</a>
-    <mat-menu #work="matMenu">
-      <button mat-menu-item>UPVoice</button>
-      <button mat-menu-item>Urkernal</button>
-      <button mat-menu-item>Trivia App</button>
-      <button mat-menu-item>Button App</button>
-    </mat-menu>
-
-    <a mat-button>Contact</a>
+  <header id="top">
+    <a href="#top" mat-button>Home</a>
+    <div>
+      <a mat-button [matMenuTriggerFor]="work">Work</a>
+      <mat-menu #work="matMenu">
+        <a href="#upvoice" mat-menu-item>UPVoice</a>
+        <a href="#movieDatabase" mat-menu-item>Urkernal</a>
+        <a href="#triviaApp" mat-menu-item>Trivia App</a>
+        <a href="#budgetApp" mat-menu-item>Budget App</a>
+      </mat-menu>
+    </div>
+    <div>
+      <a mat-button [matMenuTriggerFor]="contact">Contact</a>
+      <mat-menu #contact="matMenu">
+        <a href="https://www.linkedin.com/in/chase-baker-b55631180/" target="_blank" mat-menu-item>LinkedIn</a>
+        <a href="https://github.com/chasebaker21" target="_blank" mat-menu-item>GitHub</a>
+        <a href="https://drive.google.com/file/d/1OJFT-omJ52p0R6FGy1n5zeBmWdPmVal9/view?usp=sharing" target="_blank" mat-menu-item>Resume</a>
+      </mat-menu>
+    </div>
   </header>
   <main
     [ngClass]="{
@@ -188,6 +196,7 @@
     </div>
   </main>
   <footer>
+    <a href="#top" mat-button>Home</a>
     <a
       href="https://www.linkedin.com/in/chase-baker-b55631180/"
       target="_blank"
@@ -197,5 +206,9 @@
     <a href="https://github.com/chasebaker21" target="_blank" mat-button
       >GitHub</a
     >
+    <a href="https://drive.google.com/file/d/1OJFT-omJ52p0R6FGy1n5zeBmWdPmVal9/view?usp=sharing" target="_blank" mat-button
+    >Resume</a
+  >
+
   </footer>
 </body>

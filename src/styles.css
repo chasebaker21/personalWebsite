@@ -3,12 +3,15 @@
 html,
 body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background: black;
 }
+
+ /* styles for any angular material components */
 .mat-tab-label {
   background-color: rgb(62, 65, 71);
   height: 100%;
@@ -16,11 +19,22 @@ body {
   color: white;
   z-index: 2;
 }
-
 .mat-tab-body-wrapper {
   height: 100%;
 }
 .mat-tab-body.mat-tab-body-active {
   height: 800px;
 }
-
+.mat-menu-content {
+  background: rgb(62, 65, 71);
+}
+.mat-menu-item {
+  background: rgb(62, 65, 71);
+  color: white;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+a.mat-menu-item {
+  width: 145px;
+  text-align: center;
+}
