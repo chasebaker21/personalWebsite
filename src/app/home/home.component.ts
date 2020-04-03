@@ -34,6 +34,7 @@ export class HomeComponent implements OnInit {
   budgetHover() {
     this.hoverBudget = !this.hoverBudget;
   }
+  
 
   // activates the ngclass title animation for whichever project title is selected
   moveUp() {
@@ -48,14 +49,15 @@ export class HomeComponent implements OnInit {
     }
   }
 
+  // activates the reverse of the title animation
   moveDown() {
-    if(this.hoverUpvoice){
+    if(!this.hoverUpvoice){
       this.clickUpvoice = false;
-      } else if (this.hoverMovie) {
+      } if (!this.hoverMovie) {
         this.clickMovie = false;
-      } else if (this.hoverTrivia) {
+      } if (!this.hoverTrivia) {
         this.clickTrivia = false;
-      } else if(this.hoverBudget) {
+      } if(!this.hoverBudget) {
         this.clickBudget = false;
       }  
   }

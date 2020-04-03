@@ -148,6 +148,13 @@ footer a {
 a {
   color: white;
 }
+#links {
+  margin: 0;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  font-weight: 900;
+}
 p {
   text-align: center;
   font-size: 1.1rem;
@@ -173,6 +180,12 @@ img {
 .hoverBudget {
   background: rgb(76, 175, 80);
   transition: background-color 1s linear;
+}
+main {
+  background-color: black;
+  transition: background-color 1s linear;
+  animation-name: fadein;
+  animation-duration: 2s;
 }
 
 /* class that is added to titles for each project that creates animation */
@@ -206,9 +219,17 @@ img {
     opacity: 1;
   }
 }
+ /* adds fade out effect to background images of each project */
+@keyframes fadeOut {
+  from {opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @keyframes reverseTitle {
   from {
-    top: -160px;
+    top: -330px;
   }
   to {
     top: 0;
