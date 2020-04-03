@@ -1,7 +1,14 @@
 <body>
   <header>
     <a mat-button>Home</a>
-    <a mat-button>Work</a>
+    <a mat-button [matMenuTriggerFor]="work">Work</a>
+    <mat-menu #work="matMenu">
+      <button mat-menu-item>UPVoice</button>
+      <button mat-menu-item>Urkernal</button>
+      <button mat-menu-item>Trivia App</button>
+      <button mat-menu-item>Button App</button>
+    </mat-menu>
+
     <a mat-button>Contact</a>
   </header>
   <main
@@ -76,7 +83,10 @@
         >
           <h1
             (click)="moveUp()"
-            [ngClass]="{ moveTitle: clickUpvoice, moveTitleBack: !clickUpvoice }"
+            [ngClass]="{
+              moveTitle: clickUpvoice,
+              moveTitleBack: !clickUpvoice
+            }"
             class="textStyle"
           >
             UPVOICE
@@ -86,8 +96,12 @@
         <mat-card-content class="textStyle"
           >UPVOICE is an application built for my city to help connect the
           citizen to the city. UPGR allows a citizen to view, vote, and comment
-          on upcoming city projects.<a id="links" href="https://chasebaker21.github.io/final_project/" target="_blank"
-          >Live Demo Here!</a></mat-card-content
+          on upcoming city projects.<a
+            id="links"
+            href="https://chasebaker21.github.io/final_project/"
+            target="_blank"
+            >Live Demo Here!</a
+          ></mat-card-content
         >
       </div>
       <div class="projectInfo">
@@ -107,15 +121,19 @@
           </h1>
         </a>
         <mat-card-content class="textStyle"
-          >Urkernal is a movie database made to be useful for viewing upcoming movies
-          and/or any movie past or present. All movies were pulled from an movie
-          API.<a id="links" href="https://wayaway-jtm.github.io/angular-movie-project/"
-          target="_blank">Live Demo Here!</a></mat-card-content
+          >Urkernal is a movie database made to be useful for viewing upcoming
+          movies and/or any movie past or present. All movies were pulled from
+          an movie API.<a
+            id="links"
+            href="https://wayaway-jtm.github.io/angular-movie-project/"
+            target="_blank"
+            >Live Demo Here!</a
+          ></mat-card-content
         >
       </div>
 
       <div class="projectInfo">
-        <a          
+        <a
           data-aos="fade-right"
           data-aos-duration="1800"
           id="triviaApp"
@@ -132,7 +150,12 @@
         </a>
         <mat-card-content class="textStyle"
           >Simple Trivia App that allows user to select category and
-          difficulty.<a id="links" href="https://chasebaker21.github.io/trivia-app/" target="_blank">Live Demo Here!</a></mat-card-content
+          difficulty.<a
+            id="links"
+            href="https://chasebaker21.github.io/trivia-app/"
+            target="_blank"
+            >Live Demo Here!</a
+          ></mat-card-content
         >
       </div>
 
@@ -153,8 +176,13 @@
           </h1>
         </a>
         <mat-card-content class="textStyle"
-          >One of my first group projects! The budget app will help a user create
-          a simple budget.<a id="links" href="https://chasebaker21.github.io/budgetApp/" target="_blank">Live Demo Here!</a></mat-card-content
+          >One of my first group projects! The budget app will help a user
+          create a simple budget.<a
+            id="links"
+            href="https://chasebaker21.github.io/budgetApp/"
+            target="_blank"
+            >Live Demo Here!</a
+          ></mat-card-content
         >
       </div>
     </div>
