@@ -99,7 +99,7 @@ footer a {
 }
 #movieDatabase:hover {
   /* img called on mouseEnter/mouseLeave from HoverDirective */
-  /* background-image: url("/assets/MovieDatabase.png"); */
+  /* background-image: url("/assets/movieDatabase.png"); */
   background-position: center;
   background-size: cover;
   animation-name: fadein;
@@ -113,7 +113,7 @@ footer a {
 }
 #triviaApp:hover {
   /* img called on mouseEnter/mouseLeave from HoverDirective */
-  /* background-image: url("/assets/Trivia App.png"); */
+  /* background-image: url("/assets/triviaApp.png"); */
   background-position: center;
   background-size: cover;
   animation-name: fadein;
