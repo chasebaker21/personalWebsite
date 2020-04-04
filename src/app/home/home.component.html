@@ -24,7 +24,8 @@
       hoverUpvoice: hoverUpvoice,
       hoverMovie: hoverMovie,
       hoverTrivia: hoverTrivia,
-      hoverBudget: hoverBudget
+      hoverBudget: hoverBudget,
+      hoverCalculator: hoverCalculator
     }"
   >
     <div class="myInfo">
@@ -198,6 +199,33 @@
           ></mat-card-content
         >
       </div>
+      <div class="projectInfo">
+        <a
+          data-aos="fade-right"
+          data-aos-duration="1800"
+          appHover
+          id="calculatorApp"
+          (mouseenter)="calculatorHover(); moveUp()"
+          (mouseleave)="calculatorHover(); moveDown()"
+        >
+          <h1
+            (click)="moveUp()"
+            [ngClass]="{ moveTitle: clickCalculator, moveTitleBack: !clickCalculator }"
+            class="textStyle"
+          >
+            Calculator App
+          </h1>
+        </a>
+        <mat-card-content class="textStyle"
+          >Built this calculator app during a recent Hackathon using angular material for design.<a
+            id="links"
+            href="https://chasebaker21.github.io/2020-04-01-Interactive-Calculator/"
+            target="_blank"
+            >Live Demo Here!</a
+          ></mat-card-content
+        >
+      </div>
+
     </div>
   </main>
   <footer>

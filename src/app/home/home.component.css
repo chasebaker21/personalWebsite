@@ -135,6 +135,20 @@ footer a {
   border: 3px solid black;
   border-radius: 5px;
 }
+#calculatorApp {
+  color: white;
+  border: 2px solid white;
+}
+#calculatorApp:hover {
+    /* img called on mouseEnter/mouseLeave from HoverDirective */
+  /* background-image: url("/assets/calculatorApp.png"); */
+  background-position: center;
+  background-size: cover;
+  animation-name: fadein;
+  animation-duration: 4s;
+  border: 3px solid black;
+  border-radius: 5px;
+}
 .projectInfo {
   display: flex;
   justify-content: center;
@@ -181,6 +195,11 @@ img {
   background: rgb(76, 175, 80);
   transition: background-color 1s linear;
 }
+.hoverCalculator {
+  background: rgb(241,90,42);
+  transition: background-color 1s linear;
+}
+
 main {
   background-color: black;
   transition: background-color 1s linear;
@@ -271,5 +290,9 @@ main {
   #budgetApp {
     width: 950px;
     height: 500px;
+  }
+  #calculatorApp {
+    width: 1000px;
+    height: 600px;
   }
 }

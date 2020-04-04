@@ -12,10 +12,12 @@ export class HomeComponent implements OnInit {
   hoverMovie: boolean = false;
   hoverTrivia: boolean = false;
   hoverBudget: boolean = false;
+  hoverCalculator: boolean = false;
   clickUpvoice: boolean = false;
   clickMovie: boolean = false;
   clickTrivia: boolean = false;
   clickBudget: boolean = false;
+  clickCalculator: boolean = false;
 
   constructor() { }
 
@@ -35,6 +37,9 @@ export class HomeComponent implements OnInit {
   budgetHover() {
     this.hoverBudget = !this.hoverBudget;
   }
+  calculatorHover() {
+    this.hoverCalculator = !this.hoverCalculator;
+  }
   
 
   // activates the ngclass title animation for whichever project title is selected
@@ -47,6 +52,8 @@ export class HomeComponent implements OnInit {
       this.clickTrivia = true;
     } else if(this.hoverBudget) {
       this.clickBudget = true;
+    }else if (this.hoverCalculator) {
+      this.clickCalculator = true;
     }
   }
 
@@ -60,6 +67,8 @@ export class HomeComponent implements OnInit {
         this.clickTrivia = false;
       } if(!this.hoverBudget) {
         this.clickBudget = false;
-      }  
+      }  if(!this.hoverCalculator) {
+        this.clickCalculator = false;
+      }
   }
 }
