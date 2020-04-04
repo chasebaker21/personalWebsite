@@ -82,10 +82,10 @@ footer a {
 #upvoice {
   color: white;
   border: 2px solid white;
-
 }
 #upvoice:hover {
-  background-image: url("/assets/upvoice.png");
+  /* img called on mouseEnter/mouseLeave from HoverDirective */
+  /* background-image: url("/assets/upvoice.png"); */
   background-position: center;
   background-size: cover;
   animation-name: fadein;
@@ -96,10 +96,10 @@ footer a {
 #movieDatabase {
   color: white;
   border: 2px solid white;
-
 }
 #movieDatabase:hover {
-  background-image: url("/assets/MovieDatabase.png");
+  /* img called on mouseEnter/mouseLeave from HoverDirective */
+  /* background-image: url("/assets/MovieDatabase.png"); */
   background-position: center;
   background-size: cover;
   animation-name: fadein;
@@ -110,10 +110,10 @@ footer a {
 #triviaApp {
   color: white;
   border: 2px solid white;
-
 }
 #triviaApp:hover {
-  background-image: url("/assets/Trivia App.png");
+  /* img called on mouseEnter/mouseLeave from HoverDirective */
+  /* background-image: url("/assets/Trivia App.png"); */
   background-position: center;
   background-size: cover;
   animation-name: fadein;
@@ -124,14 +124,14 @@ footer a {
 #budgetApp {
   color: white;
   border: 2px solid white;
-
 }
 #budgetApp:hover {
-  background-image: url("/assets/budgetApp.png");
+  /* img called on mouseEnter/mouseLeave from HoverDirective */
+  /* background-image: url("/assets/budgetApp.png"); */
   background-position: center;
   background-size: cover;
   animation-name: fadein;
-  animation-duration: 4s;  
+  animation-duration: 4s;
   border: 3px solid black;
   border-radius: 5px;
 }
@@ -219,9 +219,10 @@ main {
     opacity: 1;
   }
 }
- /* adds fade out effect to background images of each project */
+/* adds fade out effect to background images of each project */
 @keyframes fadeOut {
-  from {opacity: 1;
+  from {
+    opacity: 1;
   }
   to {
     opacity: 0;
@@ -265,10 +266,10 @@ main {
   #triviaApp {
     height: 610px;
     width: 805px;
-    }
+  }
 
   #budgetApp {
     width: 950px;
-    height: 500px;  
+    height: 500px;
   }
 }
