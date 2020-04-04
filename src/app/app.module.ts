@@ -8,12 +8,14 @@ import { HomeComponent } from './home/home.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
+import { HoverDirective } from './hover.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    HoverDirective
   ],
   imports: [
     BrowserModule,

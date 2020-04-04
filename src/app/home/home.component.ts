@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewChild, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { HoverDirective } from '../hover.directive';
 
 @Component({
   selector: 'home',
