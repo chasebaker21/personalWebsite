@@ -13,9 +13,21 @@
     <div>
       <a mat-button [matMenuTriggerFor]="contact">Contact</a>
       <mat-menu #contact="matMenu">
-        <a href="https://www.linkedin.com/in/chase-baker-b55631180/" target="_blank" mat-menu-item>LinkedIn</a>
-        <a href="https://github.com/chasebaker21" target="_blank" mat-menu-item>GitHub</a>
-        <a href="https://drive.google.com/file/d/1OJFT-omJ52p0R6FGy1n5zeBmWdPmVal9/view?usp=sharing" target="_blank" mat-menu-item>Resume</a>
+        <a
+          href="https://www.linkedin.com/in/chase-baker-b55631180/"
+          target="_blank"
+          mat-menu-item
+          >LinkedIn</a
+        >
+        <a href="https://github.com/chasebaker21" target="_blank" mat-menu-item
+          >GitHub</a
+        >
+        <a
+          href="https://drive.google.com/file/d/1OJFT-omJ52p0R6FGy1n5zeBmWdPmVal9/view?usp=sharing"
+          target="_blank"
+          mat-menu-item
+          >Resume</a
+        >
       </mat-menu>
     </div>
   </header>
@@ -36,7 +48,9 @@
         </p>
       </div>
       <div class="skillsInfo">
-        <h1 class="textStyle">My Skills so far,</h1>
+        <h1 class="textStyle" data-aos="fade-down" data-aos-duration="2000">
+          My Skills so far,
+        </h1>
         <section
           class="mySkills"
           data-aos="fade-right"
@@ -90,8 +104,7 @@
           id="upvoice"
           (mouseenter)="upvoiceHover(); moveUp()"
           (mouseleave)="upvoiceHover(); moveDown()"
-
-        > 
+        >
           <h1
             (click)="moveUp()"
             [ngClass]="{
@@ -133,7 +146,8 @@
           </h1>
         </a>
         <mat-card-content class="textStyle"
-          >Urkernal is a movie database made to search and display information on upcoming or past movies.<a
+          >Urkernal is a movie database made to search and display information
+          on upcoming or past movies.<a
             id="links"
             href="https://wayaway-jtm.github.io/angular-movie-project/"
             target="_blank"
@@ -160,8 +174,8 @@
           </h1>
         </a>
         <mat-card-content class="textStyle"
-          >Simple Trivia App that allows user to select category and
-          difficulty then take a 10 question quiz.<a
+          >Simple Trivia App that allows user to select category and difficulty
+          then take a 10 question quiz.<a
             id="links"
             href="https://chasebaker21.github.io/trivia-app/"
             target="_blank"
@@ -208,14 +222,18 @@
         >
           <h1
             (click)="moveUp()"
-            [ngClass]="{ moveTitle: clickCalculator, moveTitleBack: !clickCalculator }"
+            [ngClass]="{
+              moveTitle: clickCalculator,
+              moveTitleBack: !clickCalculator
+            }"
             class="textStyle"
           >
             Calculator App
           </h1>
         </a>
         <mat-card-content class="textStyle"
-          >I Built this calculator app during a recent Hackathon using angular material for design.<a
+          >I Built this calculator app during a recent Hackathon using angular
+          material for design.<a
             id="links"
             href="https://chasebaker21.github.io/2020-04-01-Interactive-Calculator/"
             target="_blank"
@@ -223,7 +241,6 @@
           ></mat-card-content
         >
       </div>
-
     </div>
   </main>
   <footer>
@@ -237,9 +254,11 @@
     <a href="https://github.com/chasebaker21" target="_blank" mat-button
       >GitHub</a
     >
-    <a href="https://drive.google.com/file/d/1OJFT-omJ52p0R6FGy1n5zeBmWdPmVal9/view?usp=sharing" target="_blank" mat-button
-    >Resume</a
-  >
-
+    <a
+      href="https://drive.google.com/file/d/1OJFT-omJ52p0R6FGy1n5zeBmWdPmVal9/view?usp=sharing"
+      target="_blank"
+      mat-button
+      >Resume</a
+    >
   </footer>
 </body>
